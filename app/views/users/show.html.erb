@@ -6,6 +6,13 @@
 </p>
 
 <p>
+<strong>All Tweets:</strong>
+<% @user.tweets.each do |singletweet| %>
+<%= singletweet.status %> <br>
+<% end %>
+</p>
+
+<p>
   <strong>Email:</strong>
   <%= @user.email %>
 </p>
